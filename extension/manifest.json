@@ -1,0 +1,13 @@
+{
+  "name": "YaMusic",
+  "version": "1.0",
+  "description": "YaMusic+Linux+Keys",
+  "manifest_version": 2,
+  "web_accessible_resources": ["page.js"],
+  "content_scripts": [
+    {
+      "matches": ["*://music.yandex.ru/*"],
+      "js": ["main.js"]
+    }
+  ]
+}
