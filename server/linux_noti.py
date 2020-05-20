@@ -41,7 +41,7 @@ class Notifier:
                     f'\t(-{pretty_seconds(total_time-timecode)})\n'
                     f'{outdated}'
                 ),
-                icon='file://{os.path.abspath(os.getcwd())}/ya_cover.jpg',
+                icon=f'file://{os.path.abspath(os.getcwd())}/ya_cover.jpg',
                 expirey=expirey,
                 replaces_id=self._id,
                 actions=actions,

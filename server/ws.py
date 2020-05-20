@@ -139,9 +139,8 @@ async def socket_handler(websocket, path):
                 raise
             except Exception as e:
                 print('\n\nOoops', e)
-                #pprint(events._state.clone())
-                #await asyncio.sleep(1)
-                raise
+                pprint(events._state.clone())
+                await asyncio.sleep(1)
 
 start_server = websockets.serve(socket_handler, "0.0.0.0", PORT)
 loop.run_until_complete(start_server)
