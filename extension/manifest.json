@@ -4,6 +4,9 @@
   "description": "YaMusic+Linux+Keys",
   "manifest_version": 2,
   "web_accessible_resources": ["page.js"],
+  "permissions": [
+    "*://localhost:34438/*"
+  ],
   "content_scripts": [
     {
       "matches": ["*://music.yandex.ru/*"],
