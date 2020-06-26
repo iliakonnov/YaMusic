@@ -52,6 +52,8 @@ class KeyboardHandlers:
         noti.toggle()
 
 if is_linux:
-    from . import linux_kb
+    from . import xorg_kb
+else:
+    from . import pynput_kb
 
 print("\tLoaded kb")

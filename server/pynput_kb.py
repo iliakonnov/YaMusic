@@ -1,4 +1,4 @@
-print("Loading linux_kb")
+print("Loading pynput_kb")
 from .kb import KeyboardHandlers
 from pynput.keyboard import Listener
 
@@ -21,4 +21,4 @@ def handler(key):
         return handler()
 keyboard = Listener(on_press=handler)
 keyboard.start()
-print("\tLoaded linux_kb")
+print("\tLoaded pynput_kb")
